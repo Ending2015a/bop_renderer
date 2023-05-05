@@ -3,11 +3,13 @@
 
 ################################################################################
 
+LLVM_BUILD=1
+
 # Location of the OSMesa installation:
-osmesaprefix="${OSMESA_PREFIX:-/opt/osmesa}"
+osmesaprefix="${OSMESA_PREFIX:-/osmesa}"
 
 # Location of the LLVM installation:
-llvmprefix="${LLVM_PREFIX:-/opt/llvm}"
+llvmprefix="${LLVM_PREFIX:-/llvm}"
 
 ################################################################################
 

@@ -19,10 +19,10 @@ set(CPP_STANDARD -std=c++11)
 add_definitions(${CPP_STANDARD})
 
 # Python library (tested with Python 3.6).
-set(PYTHON_LIBRARIES $ENV{PYTHON_PREFIX}/lib/libpython3.6m.so)
+set(PYTHON_LIBRARIES $ENV{PYTHON_PREFIX}/lib/libpython3.8.so)
 
 # Directory with Python includes (tested with Python 3.6).
-set(PYTHON_INCLUDE_DIRS $ENV{PYTHON_PREFIX}/include/python3.6m)
+set(PYTHON_INCLUDE_DIRS $ENV{PYTHON_PREFIX}/include/python3.8)
 
 # OSMesa.
 set(OSMESA_LIBRARIES $ENV{OSMESA_PREFIX}/lib/libOSMesa32.so)
@@ -30,7 +30,7 @@ include_directories($ENV{OSMESA_PREFIX}/include)
 
 # Pybind11.
 set(PYBIND11_CPP_STANDARD ${CPP_STANDARD})
-set(PYBIND11_PYTHON_VERSION 3.6)
+set(PYBIND11_PYTHON_VERSION 3.8)
 add_subdirectory(3rd/pybind11)
 
 # Others.
